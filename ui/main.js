@@ -5,12 +5,17 @@ console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML = 'This is my webpage';
 
-//make an element move right
+//move image a little right gradually
 
 var img = document.getElementById('madi');
 
 img.onclick = function () {
-    img.style.marginLeft = '100px';
+    var interval = setInterval(moveRight, 100);
 };
 
-    
+var marginLeft = 0;
+
+function moveRight () {
+  marginLeft = marginLeft + 10;
+  img.style.marginLeft = marginLeft + 'px';
+}

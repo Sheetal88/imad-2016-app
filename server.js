@@ -104,10 +104,6 @@ app.get('/counter', function(req, res){
    res.send(counter.toString());
 });
 
-var button = document.getElementById('counter');
-var counter = 0;
-
-
 app.get('/:articleName', function(req, res) {
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));

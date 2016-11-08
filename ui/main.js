@@ -29,7 +29,7 @@ submit.onclick = function() {
                 for (var i=0; i<names.length; i++){
                     list += '<li>' + name[i] + '</li>';
                 }
-             var ul=document.getElementById('names.length; i++');
+             var ul=document.getElementById('nameList');
              ul.innerHTML = list;
          }
         }  
